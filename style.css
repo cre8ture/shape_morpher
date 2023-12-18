@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+}
+
+.horizontal-radius {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50px 0 50px 0; /* Horizontal radius (top-left, top-right, bottom-right, bottom-left) */
+  }
+
+  .sbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .sbutton:active{
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  .sbutton:hover{
+    background-color: bisque;
+    cursor: pointer;
+  }
+  
+  .vertical-radius {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    border-radius: 0 50px 0 50px; /* Vertical radius (top-left, top-right, bottom-right, bottom-left) */
+  }
+  
+  .different-radii {
+    width: 100px;
+    height: 100px;
+    background-color: #27ae60;
+    border-radius: 20px 40px 60px 80px / 80px 60px 40px 20px; /* Top-Left, Top-Right, Bottom-Right, Bottom-Left / Vertical Radii */
+  }
+  
+  .opposite-radii {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    border-radius: 0px 100px 0px 370px/225px;
+  }
+  
+  .container {
+    display: grid;
+    /* grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); Adjust the minimum and maximum width as needed */
+    grid-auto-rows: auto; /* Automatically adjust row height based on content */
+    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+    height: 100%;
+    width: 100vh;
+  ;}
+
+  .item{
+    border-style: royalblue 1px solid;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+  }
